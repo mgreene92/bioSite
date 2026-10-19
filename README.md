@@ -1,5 +1,5 @@
-# csd-340
-Repository for CSD340.
+# bioSite
+Repository for bioSite.
 <div><h1>CSD 340 Web Development with HTML and CSS</h1></div>
 <div><h2>Contributors</h2></div>
 <div>
