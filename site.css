@@ -79,9 +79,8 @@ header h1 {
     background-color: white;
     border-radius: 10px;
     padding: 25px;
-    max-width: 800px;
-    margin: 0 auto 50px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
 }
 
 .card-title {
@@ -99,35 +98,56 @@ header h1 {
 .card-content p {
     margin-bottom: 15px;
 }
+/*GLOBAL PAGE CARDS*/
+#container > .card {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
 
 /*ACCOMPLISHMENTS PAGE GRID*/
 
 .card-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 30px;
-    margin-top: 30px;
-    align-items: start;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
 
-.card-grid .card {
-    max-width: 100%;
-    margin: 0;
+.left-column {
+    flex: 2;
 }
-
-/*COLUMN*/
 
 .right-column {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
+.left-column .card,
+.right-column .card {
+    margin: 0;
+    max-width: 100%;
+}
+
+/*ACCOMPLISHMENTS PAGE IMAGES*/
+
+.left-column img.medium {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+}
+
+.right-column img.medium {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
 /*FEATURED CARD*/
 
 .featured-card {
-    max-width: 100%;
-    margin-bottom: 50px;
+    max-width: 100% !important;
+    margin-bottom: 50px !important;
 }
 
 /*HEADINGS*/
@@ -276,16 +296,18 @@ footer p {
 
 @media screen and (max-width: 768px) {
 
+
     .card-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
     }
 
     .right-column {
-        display: block;
-    }
-
-    .right-column .card {
-        margin-bottom: 30px;
+        gap: 20px;
     }
     
     header h1 {
@@ -315,16 +337,18 @@ footer p {
 
 @media screen and (max-width: 480px) {
 
+
     .card-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
     }
 
     .right-column {
-        display: block;
-    }
-
-    .right-column .card {
-        margin-bottom: 30px;
+        gap: 20px;
     }
 
     header {
