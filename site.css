@@ -102,11 +102,17 @@ header h1 {
     margin-bottom: 15px;
 }
 
+/*ACCOMPLISHMENTS PAGE GRID*/
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: 20px;
+    margin-top: 30px;
+}
+
+.featured-card {
+    margin-bottom: 30px;
 }
 
 /*HEADINGS*/
