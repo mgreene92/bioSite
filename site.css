@@ -200,7 +200,28 @@ a:hover {
     background-color: #B87333;
     color: white;
 }
+/*BUSINESS BUTTON*/
+.business-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
 
+.business-button {
+    display: inline-block;
+    background-color: #B87333;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.business-button:hover {
+    background-color: #2F4F3E;
+    color: white;
+    transform: translateY(-2px);
+}
 /*HOBBIES GALLERY*/
 
 .gallery {
