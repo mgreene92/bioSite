@@ -180,6 +180,8 @@ blockquote {
 figure {
     text-align: center;
     margin: 20px 0;
+    font-size: 10px;
+    font-style: italic;
 }
 
 img.medium {
