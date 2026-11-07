@@ -104,15 +104,26 @@ header h1 {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
     margin-top: 30px;
+    align-items: start;
 }
 
 .card-grid .card {
     max-width: 100%;
     margin: 0;
 }
+
+/*COLUMN*/
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/*FEATURED CARD*/
 
 .featured-card {
     max-width: 100%;
@@ -265,6 +276,18 @@ footer p {
 
 @media screen and (max-width: 768px) {
 
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column {
+        display: block;
+    }
+
+    .right-column .card {
+        margin-bottom: 30px;
+    }
+    
     header h1 {
         font-size: 2.2rem;
     }
@@ -291,6 +314,18 @@ footer p {
 /*MOBILE VIEW*/
 
 @media screen and (max-width: 480px) {
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column {
+        display: block;
+    }
+
+    .right-column .card {
+        margin-bottom: 30px;
+    }
 
     header {
         padding: 25px 15px;
