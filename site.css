@@ -176,7 +176,7 @@ header h1 {
     max-width: 100%;
 }
 
-/*ACCOMPLISHMENTS PAGE IMAGES*/
+/*----ACCOMPLISHMENTS PAGE IMAGES----*/
 
 .left-column img.medium {
     width: 100%;
@@ -190,14 +190,14 @@ header h1 {
     height: auto;
 }
 
-/*FEATURED CARD*/
+/*----FEATURED CARD----*/
 
 .featured-card {
     max-width: 100% !important;
     margin-bottom: 50px !important;
 }
 
-/*HEADINGS*/
+/*----HEADINGS----*/
 
 h2,
 h3,
@@ -205,13 +205,13 @@ h4 {
     color: #2F4F3E;
     font-family: "Aptos Display", sans-serif;
 }
-/*BIO TEXT*/
+/*----BIO TEXT----*/
 .bio-text {
     max-width: 750px;
     margin: 0 auto;
     text-align: left;
 }
-/*QUOTE*/
+/*----QUOTE----*/
 
 blockquote {
     border-left: 5px solid #B87333;
@@ -222,7 +222,7 @@ blockquote {
     color: #7A4F2A;
 }
 
-/*IMAGES*/
+/*----IMAGES----*/
 
 figure {
     text-align: center;
@@ -257,7 +257,7 @@ figcaption {
     margin: 20px auto;
 }
 
-/*LINKS*/
+/*----LINKS----*/
 
 a {
     color: #2F4F3E;
@@ -267,14 +267,14 @@ a:hover {
     color: #B87333;
 }
 
-/*FACTS*/
+/*----FACTS----*/
 
 .facts-list {
     padding-left: 20px;
     line-height: 2;
 }
 
-/*BUTTONS*/
+/*----BUTTONS----*/
 
 .button-container {
     display: flex;
@@ -297,7 +297,7 @@ a:hover {
     background-color: #B87333;
     color: white;
 }
-/*BUSINESS BUTTON*/
+/*----BUSINESS BUTTON----*/
 .business-button-container {
     text-align: center;
     margin-top: 20px;
@@ -319,7 +319,7 @@ a:hover {
     color: white;
     transform: translateY(-2px);
 }
-/*HOBBIES GALLERY*/
+/*----HOBBIES GALLERY----*/
 
 .gallery {
     display: grid;
@@ -327,7 +327,7 @@ a:hover {
     gap: 20px;
 }
 
-/*FOOTER*/
+/*----FOOTER----*/
 
 footer {
     background-color: #2F4F3E;
@@ -341,7 +341,7 @@ footer p {
     margin: 0;
 }
 
-/*TABLET VIEW*/
+/*----TABLET VIEW----*/
 
 @media screen and (max-width: 768px) {
 
@@ -382,7 +382,7 @@ footer p {
     }
 }
 
-/*MOBILE VIEW*/
+/*----MOBILE VIEW----*/
 
 @media screen and (max-width: 480px) {
 
@@ -430,8 +430,5 @@ footer p {
 
     blockquote {
         font-size: 1rem;
-    }
-        .card-grid {
-        grid-template-columns: 1fr;
     }
 }
